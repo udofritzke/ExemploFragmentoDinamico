@@ -12,6 +12,9 @@ import androidx.fragment.app.Fragment;
 
 import org.w3c.dom.Text;
 
+// No GitHub:
+//https://github.com/udofritzke/ExemploFragmentoDinamico
+
 public class Fragmento1 extends Fragment {
     private Button Botao1;
     private Button Botao2;
