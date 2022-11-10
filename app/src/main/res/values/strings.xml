@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ExemploFragmento</string>
+    <string name="abrir">Abrir</string>
+    <string name="fechar">Fechar</string>
 </resources>

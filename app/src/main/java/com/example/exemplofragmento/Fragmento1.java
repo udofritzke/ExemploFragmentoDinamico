@@ -13,7 +13,7 @@ import androidx.fragment.app.Fragment;
 import org.w3c.dom.Text;
 
 // No GitHub:
-//https://github.com/udofritzke/ExemploFragmentoDinamico
+// https://github.com/udofritzke/ExemploFragmentoDinamico
 
 public class Fragmento1 extends Fragment {
     private Button Botao1;
@@ -39,8 +39,10 @@ public class Fragmento1 extends Fragment {
             @Override
             public void onClick(View view) {
                 Log.d("prints", "botao 1");
-                TextView txt = (TextView) Fragmento2.frgto2.findViewById(R.id.texto_frg2);
-                if (txt != null) txt.setText("Apertou botão 1");
+                if (Fragmento2.frgto2 != null) {
+                    TextView txt = (TextView) Fragmento2.frgto2.findViewById(R.id.texto_frg2);
+                    if (txt != null) txt.setText("Apertou botão 1");
+                }
             }
         });
         Botao2 = (Button) v.findViewById(R.id.button2);
@@ -48,8 +50,10 @@ public class Fragmento1 extends Fragment {
             @Override
             public void onClick(View view) {
                 Log.d("prints", "botao 2");
-                TextView txt = (TextView) Fragmento2.frgto2.findViewById(R.id.texto_frg2);
-                if (txt != null) txt.setText("Apertou botão 2");
+                if (Fragmento2.frgto2 != null) {
+                    TextView txt = (TextView) Fragmento2.frgto2.findViewById(R.id.texto_frg2);
+                    if (txt != null) txt.setText("Apertou botão 2");
+                }
             }
         });
 
@@ -58,8 +62,10 @@ public class Fragmento1 extends Fragment {
             @Override
             public void onClick(View view) {
                 Log.d("prints", "botao 2");
-                TextView txt = (TextView) Fragmento2.frgto2.findViewById(R.id.texto_frg2);
-                if (txt != null) txt.setText("Apertou botão 3");
+                if (Fragmento2.frgto2 != null) {
+                    TextView txt = (TextView) Fragmento2.frgto2.findViewById(R.id.texto_frg2);
+                    if (txt != null) txt.setText("Apertou botão 3");
+                }
             }
         });
 
@@ -68,9 +74,11 @@ public class Fragmento1 extends Fragment {
             @Override
             public void onClick(View view) {
                 Log.d("prints", "texto 1");
-                View outro_fragmento = inflater.inflate(R.layout.fragmento2, container, false);
-                TextView txt = (TextView) Fragmento2.frgto2.findViewById(R.id.texto_frg2);
-                if (txt != null) txt.setText("Apertou sobre o texto");
+                if (Fragmento2.frgto2 != null) {
+                    View outro_fragmento = inflater.inflate(R.layout.fragmento2, container, false);
+                    TextView txt = (TextView) Fragmento2.frgto2.findViewById(R.id.texto_frg2);
+                    if (txt != null) txt.setText("Apertou sobre o texto");
+                }
             }
         });
         return v;

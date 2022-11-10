@@ -24,4 +24,7 @@ public class Fragmento2 extends Fragment {
         // Retorna uma "View frgto2" para acessar as propriedades e métodos do fragmento a partir da Activity pai
         return frgto2; //inflater.inflate(R.layout.fragmento2, container, false);
     }
+    public static Fragmento2 newInstance() {
+        return new Fragmento2();
+    }
 }

@@ -4,22 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:orientation="vertical"
     tools:context="com.example.exemplofragmento.MainActivity">
 
+    <!-- alteração do elemento Fragment para FrameLayout para posicionar o fragmento dinâmico -->
     <fragment
         android:id="@+id/fragment1"
         android:name="com.example.exemplofragmento.Fragmento1"
-        android:layout_width="0px"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        />
+        android:layout_width="match_parent"
+        android:layout_height="164dp"
+        android:layout_weight="1" />
 
-    <fragment
-        android:id="@+id/fragment2"
+
+    <FrameLayout
+        android:id="@+id/fragment2_container"
         android:name="com.example.exemplofragmento.Fragmento2"
-        android:layout_width="0px"
-        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_height="255dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/botao_abrir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
-        />
+        android:text="@string/abrir" />
 
 </LinearLayout>
