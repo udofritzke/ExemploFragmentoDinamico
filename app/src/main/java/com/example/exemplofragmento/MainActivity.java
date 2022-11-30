@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 mBotaoAbrir.setText(R.string.fechar);
             }
         }
+        abrirFragmento3();
     }
     public void onSaveInstanceState(Bundle savedInstanceState) {
         // Salva o estado do fragmento (true=aberto, false=fechado).
@@ -80,5 +81,17 @@ public class MainActivity extends AppCompatActivity {
         mBotaoAbrir.setText(R.string.abrir);
         // Set boolean flag to indicate fragment is closed.
         fragmentoAberto = false;
+    }
+    void abrirFragmento3(){
+        // obtem o gerenciador de transações de fragmento e
+        // inicia uma transação
+        Fragmento3 fragmento = Fragmento3.newInstance();
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager
+                .beginTransaction();
+
+        // Adiciona o fragmento
+        fragmentTransaction.add(R.id.fragment3_container,
+                fragmento).addToBackStack(null).commit();
     }
 }

@@ -2,4 +2,8 @@
     <string name="app_name">ExemploFragmento</string>
     <string name="abrir">Abrir</string>
     <string name="fechar">Fechar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ol_fragmento_em_branco_2">Olá fragmento em branco 2</string>
+    <string name="ol_fragmento_em_branco_3">Olá fragmento em branco 3</string>
 </resources>

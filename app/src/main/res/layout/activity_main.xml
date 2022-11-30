@@ -12,7 +12,7 @@
         android:id="@+id/fragment1"
         android:name="com.example.exemplofragmento.Fragmento1"
         android:layout_width="match_parent"
-        android:layout_height="164dp"
+        android:layout_height="218dp"
         android:layout_weight="1" />
 
 
@@ -20,7 +20,7 @@
         android:id="@+id/fragment2_container"
         android:name="com.example.exemplofragmento.Fragmento2"
         android:layout_width="match_parent"
-        android:layout_height="255dp"
+        android:layout_height="189dp"
         android:layout_weight="1" />
 
     <Button
@@ -28,6 +28,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:layout_gravity="bottom"
         android:text="@string/abrir" />
 
+    <FrameLayout
+        android:id="@+id/fragment3_container"
+        android:name="com.example.exemplofragmento.Fragmento3"
+        android:layout_width="match_parent"
+        android:layout_height="255dp"
+        android:layout_weight="1" />
 </LinearLayout>

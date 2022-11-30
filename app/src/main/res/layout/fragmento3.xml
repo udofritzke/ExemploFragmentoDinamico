@@ -3,12 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F0FFFF"
-    tools:context="com.example.exemplofragmento.Fragmento2">
+    tools:context="com.example.exemplofragmento.Fragmento3">
 
     <TextView
-        android:id = "@+id/texto_frg2"
+        android:id = "@+id/texto_frgt3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/ol_fragmento_em_branco_2" />
+        android:text="@string/ol_fragmento_em_branco_3" />
 
 </FrameLayout>
